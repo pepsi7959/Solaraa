@@ -14,7 +14,9 @@ class Device extends CI_Controller{
 			$response['result_code'] = 0x01;
 			$response['data'] = '';
 		}
-		echo json_encode($response);
+		$this->output
+			->set_content_type('application/json')
+			->set_output(json_encode($response));
 	}
 }
 ?>
