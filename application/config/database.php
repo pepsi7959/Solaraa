@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'mariadb'
-	'database_user' => 'root'
-	'database_password' => ''
-	'databasename' => 'solaraa'
+	'hostname' => 'mariadb',
+	'username' => 'solaraa',
+	'password' => 'Acho20mkr',
+	'database' => 'solaraa',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
