@@ -7,7 +7,7 @@ class M_device extends CI_Model{
         $result['status'] = "OK";
         if( !empty($id_box) and !empty($id) ) {
             $query = $this->db->get_where("tbl_device", array('id_box' => $id_box, 'id'=> $id));
-            $result['data'] = $query->result_array();
+            $result['data'] = $query->row_array();
         }else if ( !empty($id_box) ){
             $query = $this->db->get_where("tbl_device", array('id_box' => $id_box ));
             $result['data'] = $query->result_array();
